@@ -1,0 +1,12 @@
+Contributions: Sanchit Burkule: 100%
+
+Excution time for the efficient algorithm is a bit more compared to the basic one.
+For large strings (> 4644) we see that the diffeence between the time required for the basic and efficient is somewhat constant (delta). From my experiements it was around 40 seconds.
+The space savings that we get using the efficient one is considerable when having large strings. 
+For large strings (> 4644) we see that the space required for the basic increases exponentially, whereas for efficient it increase somewhat linearly.
+
+The major difference between efficient and basic:
+Memory:
+Efficient one only considers sub-prblem where we need to split the strings so as to get the least cost whereas the basic one holds the whole thing and requires considerable ammount of space for the dp approach as we dont know where we need to split we check for all the combinations and use up too much memory.
+Time:
+The divide and conquer steps take a bit more time compared to the basic one as we need to split the string as well as keep on adding the solutions of the different divided strings 
